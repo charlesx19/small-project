@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Note App</title>
+</head>
+<body>
+    <div class="container">
+      <div id="quiz-box">
+        <div class="quiz-content">
+          <div class="title"></div>
+          <form id="opForm" action="submit">
+            <ul>
+              <li>
+                <input id='op01' type="radio" name="answers" value="" checked><label id="op01_text" for="op01"></label></input>
+              </li>
+              <li>
+                <input id='op02' type="radio" name="answers" value=""><label id="op02_text" for="op02"></label></input>
+              </li>
+              <li>
+                <input id='op03' type="radio" name="answers" value=""><label id="op03_text" for="op03"></label></input>
+              </li>
+              <li>
+                <input id='op04' type="radio" name="answers" value=""><label id="op04_text" for="op04"></label></input>
+              </li>                                          
+            </ul>
+          </form>
+        </div>
+        <button id="submit" form="opForm">submit</button>
+      </div>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/bf3a744687.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

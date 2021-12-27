@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1E1F33;
+    flex-wrap: wrap;
+}
+
+.searchBar {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.searchBar #searchInput {
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid #4C4C77;
+    border-radius: 15px;
+    background: none;
+    color: #fff;
+}
+
+.container {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .movieBox {
+    position: relative;
+    width: 18%;
+    max-height: 400px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px 2px rgba(0,0,0,0.3);
+}
+
+.container .movieBox .imgBox {
+    width: 100%;
+    height: auto;
+}
+
+.container .movieBox .imgBox img {
+    display: block;
+    width: 100%;
+    height: 348px;
+}
+
+.container .movieBox .infoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: #292847;
+}
+
+.container .movieBox .infoBox .title {
+    width: 80%;
+    font-size: 14px;
+    word-break: keep-all;
+    overflow: hidden;
+}
+
+.container .movieBox .infoBox .vote {
+    height: 100%;
+    width: 20%;
+    font-size: 12px;
+    background: #1E1F33;
+}
+
+.container .movieBox .infoBox .vote.green {
+    color: #8EC84F;
+}
+
+.container .movieBox .infoBox .vote.orange {
+    color: #D4790C;
+}
+
+.container .movieBox .infoBox .vote.red {
+    color: #C13511;
+}
+
+.container .movieBox .overview {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    background: rgba(255,255,255,.85);
+    font-size: 14px;
+    overflow: auto;
+    transform: translateY(110%);
+    transition: .3s all ease-in;
+}
+
+.container .movieBox .overview p {
+    text-align: left;
+    padding: 15px;
+}
+
+.container .movieBox:hover .overview {
+    transform: translateY(0%);
+}
