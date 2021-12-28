@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <audio id="voice" src="http://docs.google.com/uc?export=open&id=14FFJKyrfLXWWfkDhDcFproeXITpPcZGf"
+        type="audio/mpeg"></audio>
+    <!-- <audio id="voice" src="https://www.w3schools.com/jsref/horse.ogg" type="audio/ogg"></audio> -->
+    <div class="container">
+        <div class="bg"></div>
+        <div class="playerBox">
+            <div class="cover">
+                <img src="https://images.unsplash.com/photo-1528991281749-0092cfc77c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="">
+            </div>
+            <div class="infoBox">
+                <div id="titleBox">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, dolores.
+                </div>
+                <div class="progressBox">
+                    <input id="musicProgress" type="range" min='0' max='100' value="0" oninput="dragProgress()"
+                        onchange="dragProgress()">
+                    <label id="musicProgressLabel" for="musicProgress">
+                        <span id="currentTime">00:00</span>
+                        <span id="durationTime">00:00</span>
+                    </label>
+                </div>
+                <div class="volumeBox">
+                    <input id="volumeValue" type="range" min='0' max='100' value="100" oninput="volChange()"
+                        onchange="volChange()">
+                    <label id="volumeValueLabel" for="volumeValue">100</label>
+                </div>
+            </div>
+            <div class="controlBox">
+                <button id="rewind">
+                    <span>▲</span>
+                    <span>▲</span>
+                </button>
+                <button id="start" class="">▲</button>
+                <button id="pause" class="hide">∥</button>
+                <button id="foward">
+                    <span>▲</span>
+                    <span>▲</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
