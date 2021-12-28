@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+#clock-box-input,
+#clock-box-info {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 30px 15px;
+  border-radius: 10px;
+  background: #eee;
+  box-shadow: 0 0 5px gray;
+}
+
+#clock-box-input input.hr,
+#clock-box-input input.min,
+#clock-box-input input.sec {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  font-size: 36px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#clock-box-info {
+  display: none;
+}
+
+#clock-box-info.show,
+#clock-box-input.show {
+  display: flex;
+}
+
+#clock-box-info div.hr,
+#clock-box-info div.min,
+#clock-box-info div.sec {
+  width: 30%;
+  padding: 10px;
+  font-size: 36px;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+button.stop,
+button.resume {
+  display: none;
+}
+
+button.stop.show,
+button.resume.show {
+  display: block;
+}
+
+#config-box {
+  width: 300px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
