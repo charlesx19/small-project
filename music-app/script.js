@@ -52,6 +52,7 @@ voice.addEventListener("playing", function () {
     playing();
 });
 
+// playing是一個setTimeout function，在進度(percent)尚未到100時持續進行
 function playing() {
     let percent = Math.floor((voice.currentTime / voice.duration) * 100);
     if (percent <= 100) {
@@ -60,6 +61,7 @@ function playing() {
                 let min = Math.floor(voice.currentTime / 60);
                 let second;
                 if (Math.floor(voice.currentTime / 60) == 60) {
+                    // 這判斷式是為了讓秒數為整數時顯示兩個0，否則數字型別只會顯示一個0
                     second = "00";
                 } else {
                     second = Math.floor(voice.currentTime % 60);
@@ -68,6 +70,7 @@ function playing() {
                 musicProgress.value = percent;
                 currentTime.innerText =
                     ("0" + min).slice(-2) + ":" + ("0" + second).slice(-2);
+                // 只要小於100%都再次call本身這個function
                 playing();
             } else {
                 musicProgress.value = 0;
