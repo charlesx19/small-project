@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.videoBox {
+  position: relative;
+  min-width: 640px;
+  overflow: hidden;
+}
+
+#video {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+#controller {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  transform: translateY(0%);
+  transition: .3s all ease-in;
+}
+
+#controller.hide {
+  /* transform: translateY(95%); */
+}
+
+#controlBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  width: 50px;
+}
+
+
+#play,
+#pause,
+#stop {
+  font-size: 14px;
+  color: #fff;
+}
+#play.hide,
+#pause.hide,
+#stop.hide {
+  display: none;
+}
+
+#progress {
+  margin: -10px -10px 10px -10px;
+  width: 110%;
+  height: 10px;
+  background: none;
+}
+
+#progress::-webkit-progress-value {
+  background: #00e1ff;
+}
+
+#progress::-webkit-progress-bar {
+  background: #aaa;
+}
+
+#volBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 25px;
+  width: 70px;
+  font-size: 14px;
+  text-align: center;
+  transition: 0.3s all ease-in;
+}
+
+#volBox:hover {
+  width: 160px;
+}
+
+#volBox:hover #volBar {
+  margin: 0 10px;
+  width: 100%;
+  opacity: 1;
+}
+
+#volBox #volIcon,
+#volBox #volIconMute {
+  position: relative;
+  color: #fff;
+}
+
+#volBox #volIcon.hide,
+#volBox #volIconMute.hide {
+  display: none;
+}
+
+#volBar {
+  display: block;
+  width: 0%;
+  opacity: 0;
+  height: 3px;
+  transition: 0.3s all ease-in;
+  -webkit-appearance: none;
+  background: #aaa;
+}
+
+#volBar::-webkit-slider-thumb {
+  position: relative;
+  width: 10px;
+  height: 15px;
+  background: #00e1ff;
+  -webkit-appearance: none;
+}
+
+#timeBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+}
+
+#currentTime,
+#durationTime {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+#fullScreen {
+  position: absolute;
+  right: 13px;
+  top: 5px;
+  width: 30px;
+  height: 100%;
+  color: #fff;
+}

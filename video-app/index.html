@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Video Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="videoBox">
+            <video id="video" src="http://docs.google.com/uc?export=open&id=1k_XBcHoljN4Ac-C1_VO0Go8OtqpJeIMl"></video>
+            <!-- <video id="video" src="http://docs.google.com/uc?export=open&id=149BSYr_hdK4H80iVlNEU6h9YvWhJb9pH"></video> -->
+
+            <div id="controller" class="hide">
+                <progress id="progress" value='' max="100"></progress>
+
+                <!-- <input type="range" id="progress" value="0" step="0.001" oninput="dragProgress()"> -->
+                <div id="controlBox">
+                    <button id="play" class="">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="pause" class="hide">
+                        <i class="fas fa-pause"></i>
+                    </butoin>
+                    <button id="stop" class="">
+                        <i class="fas fa-stop"></i>
+                    </button>
+                </div>
+                <div id="volBox">
+                    <button id="volIcon">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <button id="volIconMute" class="hide">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <input id="volBar" class="hide" type="range" min="0" max="1" value="1" step="0.05"
+                        oninput="volSetting()">
+                </div>
+                <div id="timeBox">
+                    <span id="currentTime">00:00</span>
+                    <span style="color: #fff">/</span>
+                    <span id="durationTime">00:00</span>
+                </div>
+
+                <button id="fullScreen">[ &nbsp; ]</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/bf3a744687.js" crossorigin="anonymous"></script>
+
+</html>
