@@ -47,7 +47,7 @@ button {
 }
 
 #controller.hide {
-  /* transform: translateY(95%); */
+  transform: translateY(95%);
 }
 
 #controlBox {
