@@ -42,7 +42,9 @@ function init() {
 
       item.innerHTML = `
             <input type="checkbox">
-            <div class="cover"></div>
+            <div class="cover">
+              <img src='https://i-1-lanrentuku.52tup.com/2020/11/20/8386c4de-f1c9-4046-92ec-23b22db99171.jpg?imageView2/2/w/320/' alt="">
+            </div>
             <div class="back">WIN</div>
           `;
 
@@ -53,7 +55,9 @@ function init() {
 
       item.innerHTML = `
             <input type="checkbox">
-            <div class="cover"></div>
+            <div class="cover">
+              <img src='https://i-1-lanrentuku.52tup.com/2020/11/20/8386c4de-f1c9-4046-92ec-23b22db99171.jpg?imageView2/2/w/320/' alt="">
+            </div>
             <div class="back lose">LOSE</div>
           `;
 
@@ -69,7 +73,9 @@ function init() {
 
       item.innerHTML = `
             <input type="checkbox">
-            <div class="cover"></div>
+            <div class="cover">
+              <img src='https://i-1-lanrentuku.52tup.com/2020/11/20/8386c4de-f1c9-4046-92ec-23b22db99171.jpg?imageView2/2/w/320/' alt="">
+            </div>
             <div class="back">WIN</div>
           `;
 
@@ -80,7 +86,9 @@ function init() {
 
       item.innerHTML = `
             <input type="checkbox">
-            <div class="cover"></div>
+            <div class="cover">
+              <img src='https://i-1-lanrentuku.52tup.com/2020/11/20/8386c4de-f1c9-4046-92ec-23b22db99171.jpg?imageView2/2/w/320/' alt="">
+            </div>
             <div class="back lose">LOSE</div>
           `;
 
@@ -96,7 +104,9 @@ function init() {
 
       item.innerHTML = `
             <input type="checkbox">
-            <div class="cover"></div>
+            <div class="cover">
+              <img src='https://i-1-lanrentuku.52tup.com/2020/11/20/8386c4de-f1c9-4046-92ec-23b22db99171.jpg?imageView2/2/w/320/' alt="">
+            </div>
             <div class="back">WIN</div>
           `;
 
@@ -107,7 +117,9 @@ function init() {
 
       item.innerHTML = `
             <input type="checkbox">
-            <div class="cover"></div>
+            <div class="cover">
+              <img src='https://i-1-lanrentuku.52tup.com/2020/11/20/8386c4de-f1c9-4046-92ec-23b22db99171.jpg?imageView2/2/w/320/' alt="">
+            </div>
             <div class="back lose">LOSE</div>
           `;
 
