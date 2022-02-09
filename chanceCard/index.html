@@ -8,12 +8,21 @@
 </head>
 <body>
     <div class="container">
+        <div id="newRecordBox" class="hide">
+            <div class="newRecord">
+                <div class="title">新紀錄人</div>
+                <input type="text" id="newRecordInput" value="" required>
+            </div>
+        </div>
         <div id="resultBox" class="hide">
             <div id="resultInfo">
                 <div class="title">YOU WIN</div>
-                <div id="restartBtn">Restart</div>
+                <div id="restartBtn">TAP</div>
+                <div id="rankInfo" class="hide"></div>
+                <div id="rankInfo2" class="hide"></div>
             </div>
         </div>
+        <div id="ranking"></div>
         <div id="row01">
         </div>
         <div id="row02">
@@ -27,5 +36,8 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script src="https://kit.fontawesome.com/bf3a744687.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </body>
 </html>
