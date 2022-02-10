@@ -54,14 +54,41 @@ body {
 }
 
 .container .movieBox .imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .container .movieBox .imgBox img {
     display: block;
-    width: 100%;
+    width: auto;
     height: 348px;
+}
+
+@media screen and (max-width: 960px) {
+    .container .movieBox {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container .movieBox {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container .movieBox {
+        width: 95%;
+    }
+
+    .container .movieBox .imgBox img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .container .movieBox .infoBox {
