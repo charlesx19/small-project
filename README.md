@@ -15,7 +15,7 @@ Movie-app:
 https://charlesx19.github.io/small-project/movie-app/
 
 Note-app:
-https://charlesx19.github.io/small-project/music-app/
+https://charlesx19.github.io/small-project/note-app/
 
 Timer-app:
 https://charlesx19.github.io/small-project/timer-app/
