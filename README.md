@@ -21,4 +21,4 @@ Timer-app:
 https://charlesx19.github.io/small-project/timer-app/
 
 chanceCard-simple-game:
-https://charlesx19.github.io/small-project/chanceCard-app/
+https://charlesx19.github.io/small-project/chanceCard
